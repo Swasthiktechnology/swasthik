@@ -169,6 +169,10 @@
     .four-zero-four-page svg {
         width: 100%;
     }
+
+    .some-enquiry-field .text-center a {
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-device-width: 601px) and (max-device-width: 1024px) {
