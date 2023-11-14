@@ -3,6 +3,16 @@
         width: 100%;
     }
 
+    .table-container {
+        overflow-x: auto;
+        width: 100%;
+        margin-top: 20px;
+      }
+      
+      .contact-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
 
     .mobile-fonts {
         font-size: 35px !important;
