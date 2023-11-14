@@ -5,6 +5,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     document.title = 'Portfolio | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []);
 
   var data = [

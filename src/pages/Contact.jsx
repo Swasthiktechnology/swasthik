@@ -8,6 +8,7 @@ const Contact = () => {
 
   useEffect(() => {
     document.title = 'Contact Us | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []);
 
   return (

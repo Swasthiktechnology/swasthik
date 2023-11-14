@@ -8,6 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     document.title = 'Home | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []); 
 
   return (

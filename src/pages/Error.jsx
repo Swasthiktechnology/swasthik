@@ -5,6 +5,7 @@ const Error = () => {
 
   useEffect(() => {
     document.title = '404 | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []);
 
   return (

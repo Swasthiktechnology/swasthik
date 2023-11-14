@@ -20,6 +20,7 @@ const Formdata = () => {
 
   useEffect(() => {
     document.title = 'Details | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []);
 
   return (

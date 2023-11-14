@@ -5,6 +5,7 @@ import Hire from '../component/hire';
 const About = () => {
   useEffect(() => {
     document.title = 'About Us | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -52,7 +53,7 @@ const About = () => {
             </div>
           </div>
           <div className='swasthik-ceo'>
-              
+
           </div>
         </div>
       </div>

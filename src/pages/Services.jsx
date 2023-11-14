@@ -4,6 +4,7 @@ const Services = () => {
 
   useEffect(() => {
     document.title = 'Services | Swasthik Technology';
+    window.scrollTo(0, 0);
   }, []);
 
   var services = [
