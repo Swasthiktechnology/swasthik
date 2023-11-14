@@ -46,7 +46,7 @@ const Services = () => {
             services.map((item, key) => {
               const { servicename, serviceimage } = item;
               return (
-                <div className='col-md-4 serve-hover mt-3 mb-3 custom-font-setup'>
+                <div key={key} className='col-md-4 serve-hover mt-3 mb-3 custom-font-setup'>
                   <div className='serve serve-image'>
                     <img className="w-50" src={serviceimage} />
                     <h2 className='theme-fourthly font-weight-bold mt-3 custom-fonts mobile-friendly-font'>{servicename}</h2>

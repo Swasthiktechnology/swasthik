@@ -51,6 +51,9 @@ const About = () => {
               </div>
             </div>
           </div>
+          <div className='swasthik-ceo'>
+              
+          </div>
         </div>
       </div>
     </div>

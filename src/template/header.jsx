@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { image } from "../utils/image";
 import Topbar from '../template/topbar';
 import Menu from '../component/Menu';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [scroll, setScroll] = useState(false);
@@ -24,7 +25,7 @@ const Header = () => {
                 <div className='container'>
                     <nav className="navbar navbar-expand-lg ftco_navbar ftco-navbar-light" id="ftco-navbar">
                         <div className="container">
-                            <a className="navbar-brand col-3" href="/"><img className="brand" src={image.logo} /></a>
+                            <Link className="navbar-brand col-3" to="/"><img className="brand" src={image.logo} /></Link>
                             <button
                                 className="navbar-toggler"
                                 type="button"

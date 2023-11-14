@@ -118,7 +118,7 @@ const Portfolio = () => {
               data.map((item, key) => {
                 const { projectname, projectimage, projectlink, projectbgimage } = item;
                 return (
-                  <div className='col-md-4 box-portfolio mt-3 mb-3'>
+                  <div key={key} className='col-md-4 box-portfolio mt-3 mb-3'>
                     <div className='curve-design' style={{ backgroundImage: `url(${projectbgimage})`, backgroundSize: "cover", height: "400px", borderRadius: "0px 35px" }}>
                       <img className="curve-width" src={projectimage} />
                       <div className='portfolio-button default-color'>
