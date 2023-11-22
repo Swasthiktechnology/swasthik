@@ -858,3 +858,8 @@ textarea:focus {
 .four-zero-four-page svg {
   width: 800px;
 }
+
+#drift-frame-chatWidget {
+  margin-bottom: 58px;
+  margin-right: 12px;
+}
