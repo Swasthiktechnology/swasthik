@@ -3,6 +3,10 @@
         width: 100%;
     }
 
+    .scroll-arrow{
+        display: none;
+    }
+
     .table-container {
         overflow-x: auto;
         width: 100%;
