@@ -7,7 +7,7 @@ const Portfolio = () => {
     return (
         <div className='container-fluid mt-5 pt-5'>
             <div className='container'>
-                <h2 className="font-weight-bold font-size-100 theme-fourthly text-center mobile-friendly-font">Protfolio</h2>
+                <h2 className="font-weight-bold font-size-100 theme-fourthly text-center mobile-friendly-font">Portfolio</h2>
                 <div className='protfolio d-md-flex text-center mt-5'>
                     <div className='col-md-4 box-portfolio'>
                         <div className='curve-design' style={{ backgroundImage: `url(${image.portfoliobg})`, backgroundSize: "cover", height: "400px", borderRadius: "0px 35px" }}>
