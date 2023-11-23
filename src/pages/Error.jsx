@@ -138,7 +138,7 @@ const Error = () => {
         </g>
       </svg>
       </div>
-      <a href='/' className='explore-more'>Go To Home</a>
+      <a href='/' className='explore-more'>Back To Home</a>
     </div>
   )
 }
