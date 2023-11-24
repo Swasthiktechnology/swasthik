@@ -19,7 +19,7 @@ const Header = () => {
     }
 
     return (
-        <section className='header'>
+        <section className='header d-print-none'>
             <Topbar />
             <div className={`container-fluid sticky-navbar ${scroll ? "sticky-active" : "sticky"}`}>
                 <div className='container'>

@@ -36,5 +36,6 @@ export const image = {
     whatsapp: "/images/whatsapp.png",
     aboutpagebanner: "/images/bgabout.jpg",
     aboutimages: "/images/about-images.png",
+    owner: "/images/owner.jpg",
 }
 

@@ -863,3 +863,20 @@ textarea:focus {
   margin-bottom: 58px;
   margin-right: 12px;
 }
+
+/* resume */
+.img-circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.official-color{
+  color: #00C2FF;
+  fill: #00C2FF;
+}
+
+.official-color-black{
+  color: #000000;
+}

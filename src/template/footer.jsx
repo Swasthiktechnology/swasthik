@@ -7,7 +7,7 @@ import Scrol from '../component/Scrol';
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer className="site-footer" style={{ backgroundImage: `url(${image.footer})`, backgroundSize: "cover", borderRadius: "0px 35px" }}>
+        <footer className="site-footer d-print-none" style={{ backgroundImage: `url(${image.footer})`, backgroundSize: "cover", borderRadius: "0px 35px" }}>
             <div className='container-fluid'>
                 <div className='container'>
                     <div className='footer-template'>
