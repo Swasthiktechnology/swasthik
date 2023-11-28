@@ -5,6 +5,15 @@ const Formdata = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    document.title = 'Details | Swasthik Technology';
+    window.scrollTo(0, 0);
+  }, []);
+
+  const fetchData = () => {
     axios.get('https://apoorvmathur.online/contact/form-details.php')
       .then((response) => {
         if (Array.isArray(response.data)) {
@@ -16,12 +25,17 @@ const Formdata = () => {
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
-  }, []);
+  };
 
-  useEffect(() => {
-    document.title = 'Details | Swasthik Technology';
-    window.scrollTo(0, 0);
-  }, []);
+  const handleDelete = (id) => {
+    axios.get(`https://apoorvmathur.online/contact/delete.php?id=${id}`)
+      .then(() => {
+        fetchData(); // Reload data after delete
+      })
+      .catch((error) => {
+        console.error('Error deleting data:', error);
+      });
+  };
 
   return (
     <div>
@@ -36,12 +50,13 @@ const Formdata = () => {
               <th>Email</th>
               <th>Phone</th>
               <th>Message</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             {data.length === 0 ? (
               <tr>
-                <td colSpan="3">No data available</td>
+                <td colSpan="6">No data available</td>
               </tr>
             ) : (
               data.map((item, index) => (
@@ -52,6 +67,9 @@ const Formdata = () => {
                   <td>{item.email}</td>
                   <td>{item.phone}</td>
                   <td>{item.message}</td>
+                  <td>
+                    <button onClick={() => handleDelete(item.id)}>Delete</button>
+                  </td>
                 </tr>
               ))
             )}
