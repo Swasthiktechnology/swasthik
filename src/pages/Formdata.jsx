@@ -38,7 +38,7 @@ const FormData = () => {
         <p>Loading...</p>
       ) : (
         <div className="table-container">
-          {data.length === 0 ? (
+          {Array.isArray(data) && data.length === 0 ? (
             <p>No data available</p>
           ) : (
             <table className="contact-table">
