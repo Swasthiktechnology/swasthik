@@ -9,7 +9,7 @@ const Menu = () => {
             <li><NavLink className="nav-item nav-link theme-fourthly" to="/sevices">Services</NavLink></li>
             <li><NavLink className="nav-item nav-link theme-fourthly" to="/portfolio">Portfolio</NavLink></li>
             <li><NavLink className="nav-item nav-link theme-fourthly" to="/contact">Contact Us</NavLink></li>
-            <li><Link className="nav-item nav-link theme-fourthly" to="/resume">Resume</Link></li>
+            <li><Link className="nav-item nav-link theme-fourthly" to="/resume/index.html">Resume</Link></li>
         </ul>
     )
 }
