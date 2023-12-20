@@ -9,7 +9,6 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Formdata from './pages/Formdata';
-import Resume from './pages/Resume';
 
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/details" element={<Formdata />} />
-          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
