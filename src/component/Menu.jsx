@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, NavLink } from "react-router-dom";
+import {Link, NavLink } from "react-router-dom";
 
 const Menu = () => {
     return (
@@ -9,7 +9,7 @@ const Menu = () => {
             <li><NavLink className="nav-item nav-link theme-fourthly" to="/sevices">Services</NavLink></li>
             <li><NavLink className="nav-item nav-link theme-fourthly" to="/portfolio">Portfolio</NavLink></li>
             <li><NavLink className="nav-item nav-link theme-fourthly" to="/contact">Contact Us</NavLink></li>
-            <li><a className="nav-item nav-link theme-fourthly" href="https://swasthik-technology.vercel.app/resume/index.html">Resume</a></li>
+            <li><Link className="nav-item nav-link theme-fourthly" to="/resume">Resume</Link></li>
         </ul>
     )
 }
